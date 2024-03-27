@@ -90,7 +90,7 @@ If ($about){
 ### Check if the argument source is given. If not it will prompt for to input the path.
 
 if ($sourceFolder.Length -eq 0 -or $sourceFolder -eq $null -or $sourceFolder -eq '') {
-    Write-host "You haven't provide the source folder."
+    Write-host "You haven't provide the Source Folder."
     $sourceFolder = Read-Host "Please enter the Source Path "
 }
  
@@ -98,7 +98,7 @@ if ($sourceFolder.Length -eq 0 -or $sourceFolder -eq $null -or $sourceFolder -eq
 ### Check if the argument destination is given. If not it will prompt for to input the path.
 
 if ($destinationFolder.Length -eq 0 -or $destinationFolder -eq $null -or $destinationFolder -eq '') {
-    Write-host "You haven't provide the destination folder."
+    Write-host "You haven't provide the Destination Folder."
     $destinationFolder = Read-Host "Please enter the Destination Path "
   
 }
@@ -106,7 +106,7 @@ if ($destinationFolder.Length -eq 0 -or $destinationFolder -eq $null -or $destin
 ### Check if argument Log path is given. If not it will prompt for to input the path.
 
 if ($logpathFolder.Length -eq 0 -or $logpathFolder -eq $null -or $logpathFolder -eq '') {
-   Write-host "You haven't provide the  folder." 
+   Write-host "You haven't provide the LogPath Folder." 
    $logpathFolder = Read-Host "Please enter the Log Path "
 }
 
