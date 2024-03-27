@@ -17,7 +17,7 @@
    - In the end you will have an export BCKLogs_Currentdate.csv file that shows all the actions (copied, skipped, create, delete) of each file and folder
   
  .Format
-   - Backup.ps1 -Source <foldername> - Destination <fodlername> -logpath <logpathlocation> 
+   - Backup.ps1 -Source <Source Folder> - Destination <Destination Folder> -logpath <LogPath Folder> 
 #> 
 
 
@@ -55,11 +55,11 @@ If ($help){
   Write-Host " This script will make exact copy of a source folder to a destination folder`n", 
              "  You can run it with the following format `n"
   Write-Host  "Backup.ps1 -source " -ForegroundColor Green -NoNewline;
-  Write-Host "<put source folder>" -ForegroundColor Yellow -NoNewline; 
+  Write-Host "<Source Folder>" -ForegroundColor Yellow -NoNewline; 
   Write-Host " -destination" -ForegroundColor Green -NoNewline;
-  Write-Host " <put destination folder>" -ForegroundColor Yellow -NoNewline;
+  Write-Host " <Destination Folder>" -ForegroundColor Yellow -NoNewline;
   Write-Host " -logpath" -ForegroundColor Green -NoNewline;
-  Write-Host " <put logfile folder>" -ForegroundColor Yellow
+  Write-Host " <LogPath Folder>" -ForegroundColor Yellow
   Exit
 }
 
@@ -67,14 +67,14 @@ If ($help){
 ### Triggered with the argument -about
 
 If ($about){
-  Write-output "Author: Dimitrios Kakoulidis
+ Write-output "Author: Dimitrios Kakoulidis
  Date Create : 27-03-2024
  Last Update : 27-03-2024
  Version: 1.0
 
  .Description 
    Script is making exact copy of a source location to destination.
-   - If file or fodler exists on destination folder but not on source then it will be removed
+   - If file or folder exists on destination folder but not on source then it will be removed
    - If file exists on source and not on destination then it will be copied in the destination folder
    - If file exists on both folders and it is  exactly the same then it will be skipped 
    - If file on source folder is newer the script will replace the old file on destination with the new updated version
@@ -83,7 +83,7 @@ If ($about){
    - In the end you will have an export BCKLogs_Currentdate.csv file that shows all the actions (copied, skipped, create, delete) of each file and folder
    
  .Format
-   - Backup.ps1 -Source <foldername> - Destination <fodlername> -logpath <logpathlocation>"
+   - Backup.ps1  -Source <Source Folder> - Destination <Destination Folder> -logpath <LogPath Folder>"
   Exit
 }
 
