@@ -51,4 +51,4 @@ Apart from the -source, -destination and -logpath arguments you can use also the
 
 The script is written in a way that can predict missing arguments. For Example in case you provide only source and logpath folder it will prompt you for destination path. 
 
- ![Alt text](/screenshots/no_dest_folder.png?raw=true "Error")
+ ![Alt text](/screenshots/no_dest_folder1.png?raw=true "Error")
