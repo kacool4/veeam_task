@@ -8,7 +8,7 @@
 
  .Description 
    Script is making exact copy of a source location to destination.
-   - If file or fodler exists on destination folder but not on source then it will be removed
+   - If file or folder exists on destination folder but not on source then it will be removed
    - If file exists on source and not on destination then it will be copied in the destination folder
    - If file exists on both folders and it is  exactly the same then it will be skipped 
    - If file on source folder is newer the script will replace the old file on destination with the new updated version
@@ -59,7 +59,7 @@ If ($help){
   Write-Host " -destination" -ForegroundColor Green -NoNewline;
   Write-Host " <put destination folder>" -ForegroundColor Yellow -NoNewline;
   Write-Host " -logpath" -ForegroundColor Green -NoNewline;
-  Write-Host " <put log file folder>" -ForegroundColor Yellow
+  Write-Host " <put logfile folder>" -ForegroundColor Yellow
   Exit
 }
 
@@ -261,7 +261,7 @@ foreach ($file in $allFiles) {
 
     } else {
         # Create a log record for the file that it is skipped as it is already exists and it is the same
-        $AuditLog| Add-Member -MemberType NoteProperty -Name 'Status' -Value 'SKipped'
+        $AuditLog| Add-Member -MemberType NoteProperty -Name 'Status' -Value 'Skipped'
         Write-Host "File $FullFilename was Skipped" -ForegroundColor Yellow
     }
     $logs+= $AuditLog
