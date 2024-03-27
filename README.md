@@ -1,8 +1,8 @@
 # Backup Tool ver 1.0
-
- Author: Dimitrios Kakoulidis
- Date Create : 27-03-2024
- Last Update : 27-03-2024
+## Info
+ Author: Dimitrios Kakoulidis <br>
+ Date Create : 27-03-2024 <br>
+ Last Update : 27-03-2024 <br>
  Version: 1.0
 
  ## Description 
@@ -13,7 +13,7 @@
    - If file on source folder is newer the script will replace the old file on destination with the new updated version
  
  ## Format
-   - Backup.ps1 -Source <Source Folder> - Destination <Destination Folder> -logpath <Log Folder>  
+   - Backup.ps1 -Source 'Source Folder' -Destination 'Destination Folder' -logpath 'Log Folder'  
   
  ## Output
    - In the end you will have an export BCKLogs_Currentdate.csv file that shows all the actions (copied, skipped, create, delete) of each file and folder
@@ -23,19 +23,26 @@
 
  ## Run the script
  
-   Use the following command to run the script and replace the <Source_Folder> and <Destination_folder> with your preferred folders
-```powershell
-PS> Backup.ps1 -Source <Source Folder> - Destination <Destination Folder> -logpath <Log Folder> 
+   Use the following command to run the script and replace the <Source Folder>, <Destination Folder> and <Log Folder> with your preferred folders
 ```
+-Source --> Source folder that you need to copy
+-Destination --> Destination Folder. If it is not exists it will create it
+-logpath --> Folder that will store the output file. If it is not exists it will create it
+```
+
+   
+```powershell
+PS> Backup.ps1 -Source <Source Folder> -Destination <Destination Folder> -logpath <Log Folder> 
+```
+
    ![Alt text](/screenshots/Output.png?raw=true "Console Output")
 
 ## Arguments
-Apart from the -source and -destination arguments you can use also the following :
+Apart from the -source, -destination and -logpath arguments you can use also the following :
 ```
-- -Logpath --> Give the path that the log file will be stored
-- -version --> Shows the latest version of the script
-- -Help --> Gives you the syntax of the command
-- -About --> Gives a description of the script
+-version --> Shows the latest version of the script
+-Help --> Gives you the syntax of the command
+-About --> Gives a description of the script
 ```
 
  ![Alt text](/screenshots/triggers.png?raw=true "Arguments")
