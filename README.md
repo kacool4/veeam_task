@@ -1,6 +1,6 @@
 # Backup Tool ver 1.0
 ## Info
- Author: Dimitrios Kakoulidis <br>
+ Author: Dimitrios Kakoulidis. <br>
  Date Create : 27-03-2024 <br>
  Last Update : 27-03-2024 <br>
  Version: 1.0
